@@ -45,8 +45,14 @@ if(!empty($_SESSION['USER']['tipe'] == "petugas")) {
                     </li>
 
                     <li class="sidebar-item active">
+                        <a class="sidebar-link" href="?page=dashboard">
+                            <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
                         <a class="sidebar-link" href="?page=kelas">
-                            <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Kelas</span>
+                            <i class="align-middle" data-feather="command"></i> <span class="align-middle">Kelas</span>
                         </a>
                     </li>
 
