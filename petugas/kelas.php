@@ -20,7 +20,7 @@
             <td><?= $data["nama_kelas"] ?></td>
             <td><?= $data["kompetensi_keahlian"] ?></td>
             <td>
-                <a href="#" class="btn btn-sm btn-warning mb-1">Edit</a>
+                <a href="?page=edit_kelas&id=<?= $data["id_kelas"] ?>" class="btn btn-sm btn-warning mb-1">Edit</a>
                 <form action="../kontrol/kontrolKelas.php?aksi=hapus" method="POST">
                     <input type="hidden" name="id_kelas" value="<?= $data["id_kelas"] ?>">
                     <button class="btn btn-sm btn-danger">Hapus</button>
