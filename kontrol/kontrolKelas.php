@@ -27,7 +27,7 @@ if ($_GET['aksi'] == "edit_kelas") {
     $nama_kelas = $_POST['nama_kelas'];
     $kompetensi_keahlian = $_POST['kompetensi_keahlian'];
 
-    $hapus = $koneksi->prepare("CALL updateKelas('$id_kelas', '$nama_kelas', '$kompetensi_keahlian')");
-    $hapus->execute();
+    $edit = $koneksi->prepare("CALL updateKelas('$id_kelas', '$nama_kelas', '$kompetensi_keahlian')");
+    $edit->execute();
     header('location:../petugas?page=kelas');
 }
